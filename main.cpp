@@ -1,7 +1,15 @@
 #include "opencv2/opencv.hpp"
+#include <string>
+#include <sstream>
+#include <iomanip>
 
-int main()
+using namespace std;
+using namespace cv;
+int image_num = 0;
+
+int main(int argc, char* argv[])
 {
+    printf("filename %s\n",argv[1]);
     cv::VideoCapture cap(0);
 
     if(!cap.isOpened())
