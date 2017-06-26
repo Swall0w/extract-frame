@@ -34,7 +34,7 @@ int main(int argc, char* argv[])
             cout << "End of Video" << endl;
             break;
         }
-        if (frame_num%100 == 0) save_frame(frame);
+        if (frame_num%50 == 0) save_frame(frame);
 
 //        cv::imshow("window",frame);
 //        int key = cv::waitKey(1);
